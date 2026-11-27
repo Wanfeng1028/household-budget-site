@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hart Family Budget — Every dollar has a job</title>
+<meta name="description" content="A household budget site for the Hart family: track income and spending, keep category budgets, and save toward goals — all in one place.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">Hart Family Budget <small>Every dollar has a job.</small></div>
+  <div class="month-switcher" role="group" aria-label="Choose month">
+    <button type="button" id="month-prev" aria-label="Previous month">&lsaquo;</button>
+    <span id="month-label">November 2026</span>
+    <button type="button" id="month-next" aria-label="Next month">&rsaquo;</button>
+  </div>
+</header>
+<div class="layout">
+  <nav class="sidebar" aria-label="Sections">
+    <a class="nav-link" href="#/dashboard">Dashboard</a>
+    <a class="nav-link" href="#/transactions">Transactions</a>
+    <a class="nav-link" href="#/budgets">Budgets</a>
+    <a class="nav-link" href="#/goals">Goals</a>
+    <a class="nav-link" href="#/reports">Reports</a>
+    <p class="side-note">Daniel &amp; Maya Hart, with Leo and Nora. Sample household data for November 2026.</p>
+  </nav>
+  <main id="view" aria-live="polite"></main>
+</div>
+<footer class="site-footer">
+  <p>Hart Family Budget is a sample household budget site. Figures are fictional and stored only in your browser.</p>
+</footer>
+<script src="data.js"></script>
+<script src="store.js"></script>
+<script src="charts.js"></script>
+<script src="views.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
